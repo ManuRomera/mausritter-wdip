@@ -1,0 +1,687 @@
+.mausritter.sheet.wdip-sheet {
+  background: #d7c294;
+  color: #24180f;
+}
+
+.mausritter.sheet.wdip-sheet .window-content {
+  position: relative;
+  overflow: auto;
+  background-attachment: local;
+  background:
+    linear-gradient(180deg, rgba(242, 226, 188, 0.985), rgba(214, 190, 137, 0.975)),
+    radial-gradient(circle at 8% 10%, rgba(111, 64, 24, 0.19), transparent 20%),
+    radial-gradient(circle at 91% 12%, rgba(126, 75, 32, 0.16), transparent 18%),
+    radial-gradient(circle at 18% 86%, rgba(93, 56, 22, 0.12), transparent 18%),
+    radial-gradient(circle at 84% 84%, rgba(96, 56, 20, 0.16), transparent 16%);
+  box-shadow:
+    inset 0 0 0 2px rgba(72, 46, 23, 0.65),
+    inset 0 0 0 7px rgba(246, 234, 204, 0.30),
+    inset 0 0 110px rgba(89, 53, 23, 0.17);
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(90, 58, 22, 0.025) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(90deg, rgba(90, 58, 22, 0.018) 0 3px, transparent 3px 9px),
+    radial-gradient(circle at 12% 20%, rgba(108, 63, 27, 0.14), transparent 12%),
+    radial-gradient(circle at 80% 16%, rgba(108, 63, 27, 0.10), transparent 14%),
+    radial-gradient(circle at 24% 78%, rgba(108, 63, 27, 0.08), transparent 16%),
+    radial-gradient(circle at 85% 82%, rgba(108, 63, 27, 0.10), transparent 15%);
+  mix-blend-mode: multiply;
+  opacity: 0.65;
+  z-index: 0;
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 120px rgba(72, 44, 19, 0.20),
+    inset 0 0 30px rgba(72, 44, 19, 0.18);
+  z-index: 0;
+}
+
+.mausritter.sheet.wdip-sheet .window-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  background:
+    linear-gradient(180deg, rgba(244, 233, 198, 0.98), rgba(222, 202, 154, 0.96)),
+    radial-gradient(circle at 10% 14%, rgba(115, 67, 31, 0.20), transparent 22%),
+    radial-gradient(circle at 88% 18%, rgba(143, 88, 36, 0.16), transparent 18%),
+    radial-gradient(circle at 14% 88%, rgba(112, 65, 23, 0.13), transparent 18%),
+    radial-gradient(circle at 92% 84%, rgba(110, 62, 26, 0.20), transparent 18%);
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form > * {
+  position: relative;
+  z-index: 1;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner {
+  margin: 0 0 12px;
+  padding: 2px 0 6px;
+  text-align: center;
+  border: 0;
+  border-top: 3px double rgba(45, 30, 18, 0.75);
+  border-bottom: 3px double rgba(45, 30, 18, 0.75);
+  background: transparent;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  letter-spacing: 0.20em;
+  font-size: 46px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #23170f;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner-subtitle {
+  margin-top: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgba(36, 24, 15, 0.92);
+}
+
+.mausritter.sheet.wdip-sheet .header-border,
+.mausritter.sheet.wdip-sheet .blockborder,
+.mausritter.sheet.wdip-sheet .blockborder-mini,
+.mausritter.sheet.wdip-sheet .item-container,
+.mausritter.sheet.wdip-sheet .creature-header-border {
+  border-color: #382214 !important;
+  background: rgba(255, 248, 229, 0.10) !important;
+  box-shadow: none !important;
+}
+
+.mausritter.sheet.wdip-sheet .portrait,
+.mausritter.sheet.wdip-sheet .portrait-creature {
+  border: 3px solid #2d1e12;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 245, 221, 0.28),
+    0 0 0 1px rgba(59, 38, 21, 0.15);
+  background: rgba(255,255,255,0.08);
+}
+
+.mausritter.sheet.wdip-sheet .statName,
+.mausritter.sheet.wdip-sheet .headerinputtext,
+.mausritter.sheet.wdip-sheet .current-max-label,
+.mausritter.sheet.wdip-sheet .item-slot-header,
+.mausritter.sheet.wdip-sheet .item-bag-text,
+.mausritter.sheet.wdip-sheet .tab-select {
+  color: #24180f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: transparent !important;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputtext {
+  padding-left: 0;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputfield,
+.mausritter.sheet.wdip-sheet .charname,
+.mausritter.sheet.wdip-sheet .creaturedescription,
+.mausritter.sheet.wdip-sheet .editor,
+.mausritter.sheet.wdip-sheet .editor-content,
+.mausritter.sheet.wdip-sheet .tox .tox-edit-area__iframe,
+.mausritter.sheet.wdip-sheet .tox .tox-edit-area__iframe html,
+.mausritter.sheet.wdip-sheet .tox .tox-edit-area__iframe body,
+.mausritter.sheet.wdip-sheet input,
+.mausritter.sheet.wdip-sheet textarea {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputfield input,
+.mausritter.sheet.wdip-sheet .wdip-meta-grid input,
+.mausritter.sheet.wdip-sheet .wdip-inline-meta input,
+.mausritter.sheet.wdip-sheet .statblock input,
+.mausritter.sheet.wdip-sheet textarea {
+  border: 0 !important;
+  border-bottom: 1px solid rgba(55, 35, 18, 0.55) !important;
+  border-radius: 0 !important;
+  color: #23170f !important;
+}
+
+.mausritter.sheet.wdip-sheet .minmax-input {
+  text-align: center;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputfield input:focus,
+.mausritter.sheet.wdip-sheet .wdip-meta-grid input:focus,
+.mausritter.sheet.wdip-sheet .wdip-inline-meta input:focus,
+.mausritter.sheet.wdip-sheet .statblock input:focus,
+.mausritter.sheet.wdip-sheet textarea:focus {
+  outline: none;
+  border-bottom-color: #2d1e12 !important;
+  box-shadow: 0 1px 0 rgba(45, 30, 18, 0.40) !important;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-meta-grid {
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-meta-field {
+  min-height: 44px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-inline-meta .headerinputtext {
+  min-width: 110px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-character-aguante,
+.mausritter.sheet.wdip-sheet .wdip-npc-aguante,
+.mausritter.sheet.wdip-sheet .wdip-npc-grit {
+  margin-top: 6px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-npc-extra-stats {
+  margin-bottom: 6px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-firearm-card {
+  box-shadow: 0 0 0 2px rgba(79, 41, 13, 0.45);
+}
+
+.mausritter.sheet.wdip-sheet .wdip-shots-label {
+  margin-left: 5px;
+  font-size: 11px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mausritter.sheet.wdip-sheet .item-card,
+.mausritter.sheet.wdip-sheet .item-card-header,
+.mausritter.sheet.wdip-sheet .item-card-header-noborder {
+  background: rgba(255, 247, 225, 0.20);
+}
+
+.wdip-item-sheet .wdip-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+}
+
+.wdip-item-sheet .wdip-checkbox-row span {
+  font-size: 12px;
+}
+
+
+/* v1.3.2 ajustes WDIP en castellano */
+.mausritter.sheet.wdip-sheet .window-content > form {
+  background:
+    linear-gradient(180deg, rgba(242, 226, 188, 0.985), rgba(214, 190, 137, 0.975)),
+    radial-gradient(circle at 8% 10%, rgba(111, 64, 24, 0.19), transparent 20%),
+    radial-gradient(circle at 91% 12%, rgba(126, 75, 32, 0.16), transparent 18%),
+    radial-gradient(circle at 18% 86%, rgba(93, 56, 22, 0.12), transparent 18%),
+    radial-gradient(circle at 84% 84%, rgba(96, 56, 20, 0.16), transparent 16%);
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form::before {
+  opacity: 0.78;
+  background:
+    repeating-linear-gradient(0deg, rgba(89, 55, 21, 0.020) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(90deg, rgba(89, 55, 21, 0.014) 0 3px, transparent 3px 9px),
+    radial-gradient(circle at 14% 21%, rgba(101, 61, 27, 0.13), transparent 12%),
+    radial-gradient(circle at 83% 16%, rgba(101, 61, 27, 0.09), transparent 14%),
+    radial-gradient(circle at 25% 79%, rgba(101, 61, 27, 0.07), transparent 16%),
+    radial-gradient(circle at 86% 81%, rgba(101, 61, 27, 0.10), transparent 15%);
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner {
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner-title {
+  font-size: 36px;
+  letter-spacing: 0.16em;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner-subtitle {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.mausritter.sheet.wdip-sheet .headernamegrid:first-child .headerinputtext {
+  font-size: 2.15rem !important;
+}
+
+.mausritter.sheet.wdip-sheet .headernamegrid:first-child .headerinputfield {
+  font-size: 1.45rem !important;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputtext,
+.mausritter.sheet.wdip-sheet .tab-select,
+.mausritter.sheet.wdip-sheet .item-slot-header,
+.mausritter.sheet.wdip-sheet .item-bag-text,
+.mausritter.sheet.wdip-sheet .current-max-label,
+.mausritter.sheet.wdip-sheet .resource-label,
+.mausritter.sheet.wdip-sheet .wdip-checkbox-row span {
+  font-size: 0.92rem !important;
+  letter-spacing: 0.03em;
+}
+
+.mausritter.sheet.wdip-sheet .minmaxtext,
+.mausritter.sheet.wdip-sheet .bigLabel {
+  font-size: 1.32rem !important;
+  letter-spacing: 0.03em;
+}
+
+.mausritter.sheet.wdip-sheet .littleLabel,
+.mausritter.sheet.wdip-sheet .statName.littleLabel {
+  font-size: 0.98rem !important;
+  letter-spacing: 0.03em;
+}
+
+.mausritter.sheet.wdip-sheet .minmax-input {
+  font-size: 1.45rem !important;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputfield,
+.mausritter.sheet.wdip-sheet .headerinputfield input,
+.mausritter.sheet.wdip-sheet textarea,
+.mausritter.sheet.wdip-sheet .creaturedescription,
+.mausritter.sheet.wdip-sheet .editor-content {
+  font-size: 0.95rem !important;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-meta-field {
+  min-height: 38px;
+}
+
+.mausritter.sheet.wdip-sheet .header-border,
+.mausritter.sheet.wdip-sheet .blockborder,
+.mausritter.sheet.wdip-sheet .blockborder-mini,
+.mausritter.sheet.wdip-sheet .item-container,
+.mausritter.sheet.wdip-sheet .creature-header-border {
+  background: rgba(255, 248, 229, 0.06) !important;
+}
+
+.mausritter.sheet.wdip-sheet .headerinputfield input,
+.mausritter.sheet.wdip-sheet .wdip-meta-grid input,
+.mausritter.sheet.wdip-sheet .wdip-inline-meta input,
+.mausritter.sheet.wdip-sheet textarea {
+  border-bottom-color: rgba(55, 35, 18, 0.35) !important;
+}
+
+
+/* v1.3.4 objetos con papel claro, sin tocar tamaños ni drag */
+.mausritter.sheet.wdip-sheet .item-container {
+  background-color: rgba(233, 214, 172, 0.72) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card,
+.mausritter.sheet.wdip-sheet .item-card-header,
+.mausritter.sheet.wdip-sheet .item-card-header-noborder,
+.mausritter.sheet.wdip-sheet .item-card-tag,
+.mausritter.sheet.wdip-sheet .item-card-damage,
+.mausritter.sheet.wdip-sheet .item-card-field-container {
+  background: rgba(244, 231, 198, 0.96) !important;
+  color: #24180f !important;
+  border-color: rgba(56, 34, 20, 0.92) !important;
+  box-shadow: none !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card-tag,
+.mausritter.sheet.wdip-sheet .item-card-desc,
+.mausritter.sheet.wdip-sheet .item-card-clear,
+.mausritter.sheet.wdip-sheet .item-card-clear-text,
+.mausritter.sheet.wdip-sheet .item-card-max,
+.mausritter.sheet.wdip-sheet .item-card-field,
+.mausritter.sheet.wdip-sheet .item-card-header *,
+.mausritter.sheet.wdip-sheet .item-card-header-noborder *,
+.mausritter.sheet.wdip-sheet .item-card a {
+  color: #24180f !important;
+  text-shadow: none !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card-max {
+  color: rgba(36, 24, 15, 0.68) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card-field-container {
+  background: rgba(238, 223, 187, 0.98) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card input,
+.mausritter.sheet.wdip-sheet .item-card textarea {
+  color: #24180f !important;
+  border-bottom-color: rgba(55, 35, 18, 0.32) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card-image {
+  opacity: 0.98;
+}
+
+.mausritter.sheet.item.wdip-item-sheet,
+.mausritter.sheet.item.wdip-item-sheet .window-content {
+  background:
+    linear-gradient(180deg, rgba(242, 226, 188, 0.985), rgba(214, 190, 137, 0.975)),
+    radial-gradient(circle at 8% 10%, rgba(111, 64, 24, 0.19), transparent 20%),
+    radial-gradient(circle at 91% 12%, rgba(126, 75, 32, 0.16), transparent 18%),
+    radial-gradient(circle at 18% 86%, rgba(93, 56, 22, 0.12), transparent 18%),
+    radial-gradient(circle at 84% 84%, rgba(96, 56, 20, 0.16), transparent 16%) !important;
+  color: #24180f !important;
+}
+
+.mausritter.sheet.item.wdip-item-sheet .window-content {
+  box-shadow:
+    inset 0 0 0 2px rgba(72, 46, 23, 0.65),
+    inset 0 0 0 7px rgba(246, 234, 204, 0.30),
+    inset 0 0 110px rgba(89, 53, 23, 0.17) !important;
+}
+
+.mausritter.sheet.item.wdip-item-sheet label,
+.mausritter.sheet.item.wdip-item-sheet .resource-label,
+.mausritter.sheet.item.wdip-item-sheet .wdip-checkbox-row span,
+.mausritter.sheet.item.wdip-item-sheet .item-header,
+.mausritter.sheet.item.wdip-item-sheet .item-header *,
+.mausritter.sheet.item.wdip-item-sheet .window-title {
+  color: #24180f !important;
+}
+
+.mausritter.sheet.item.wdip-item-sheet input,
+.mausritter.sheet.item.wdip-item-sheet textarea,
+.mausritter.sheet.item.wdip-item-sheet select {
+  background: rgba(255,255,255,0.08) !important;
+  color: #24180f !important;
+  border-color: rgba(55, 35, 18, 0.32) !important;
+}
+
+
+/* v1.3.5 ajustes solicitados */
+.mausritter.sheet.wdip-sheet .wdip-banner-title {
+  color: #8b4a44;
+  text-shadow: 0 1px 0 rgba(255, 232, 204, 0.18);
+}
+
+.mausritter.sheet.wdip-sheet .wdip-banner-subtitle {
+  color: rgba(72, 39, 28, 0.86);
+}
+
+.mausritter.sheet.wdip-sheet .item-container,
+.mausritter.sheet.wdip-sheet .sheet-body,
+.mausritter.sheet.wdip-sheet .sheet-body .tab,
+.mausritter.sheet.wdip-sheet .sheet-body .tab.items {
+  overflow: visible !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-container {
+  isolation: isolate;
+}
+
+.mausritter.sheet.wdip-sheet .item-card,
+.mausritter.sheet.wdip-sheet .dragItems {
+  background-color: rgba(241, 226, 188, 0.96);
+}
+
+.mausritter.sheet.wdip-sheet .item-card-header,
+.mausritter.sheet.wdip-sheet .item-card-header-noborder,
+.mausritter.sheet.wdip-sheet .item-card-tag,
+.mausritter.sheet.wdip-sheet .item-card-damage,
+.mausritter.sheet.wdip-sheet .item-card-field-container {
+  background: rgba(239, 223, 186, 0.92);
+}
+
+.mausritter.sheet.wdip-sheet .item-slot-dashed,
+.mausritter.sheet.wdip-sheet .item-bag-container {
+  z-index: 1 !important;
+}
+
+
+/* v1.3.6 correcciones visuales y automatización */
+.mausritter.sheet.wdip-sheet .sheet-body,
+.mausritter.sheet.wdip-sheet .sheet-body .tab,
+.mausritter.sheet.wdip-sheet .sheet-body .tab.items,
+.mausritter.sheet.wdip-sheet .item-container {
+  overflow: visible !important;
+}
+
+/* v1.3.8 correcciones */
+
+/* 1. Icono de redimensionado siempre por delante.
+   Solo z-index: el handle ya tiene position:absolute, cambiarlo lo rompería. */
+.window-app:has(.mausritter.wdip-sheet) .window-resizable-handle {
+  z-index: 99999 !important;
+  pointer-events: all !important;
+}
+
+/* 2. El banner SE BUSCA no crece al ampliar la hoja verticalmente.
+   Solo para .wdip-banner: el char-header del sistema no debe tocarse. */
+.mausritter.sheet.wdip-sheet .wdip-banner {
+  flex: 0 0 auto !important;
+}
+
+/* 3. Scroll en el contenido del editor de notas (no en el tab entero).
+   Se aplica al div de contenido dentro del tab de notas. */
+.mausritter.sheet.wdip-sheet [data-tab="notes"] .editor-content {
+  overflow-y: auto !important;
+  max-height: calc(100vh - 520px) !important;
+  min-height: 80px !important;
+}
+
+/* 4. Tab de notas de PNJ inyectado por el módulo */
+.mausritter.sheet.wdip-sheet .wdip-npc-notes-tab {
+  overflow-y: auto !important;
+  max-height: calc(100vh - 420px) !important;
+  min-height: 120px !important;
+  padding: 6px 8px !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-container {
+  background-color: rgba(239, 223, 186, 0.82) !important;
+  z-index: 1;
+}
+
+.mausritter.sheet.wdip-sheet .item-container-controls {
+  z-index: 5;
+}
+
+.mausritter.sheet.wdip-sheet .item-card,
+.mausritter.sheet.wdip-sheet .dragItems {
+  background-color: rgba(244, 231, 198, 0.98) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card-tag,
+.mausritter.sheet.wdip-sheet .item-card-damage,
+.mausritter.sheet.wdip-sheet .item-card-field-container,
+.mausritter.sheet.wdip-sheet .item-card-header,
+.mausritter.sheet.wdip-sheet .item-card-header-noborder {
+  background: rgba(244, 231, 198, 0.96) !important;
+}
+
+.mausritter.sheet.wdip-sheet .item-card.dragItems {
+  pointer-events: auto;
+}
+
+.mausritter.sheet.wdip-sheet .wdip-plomo-badge {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 1px 4px;
+  border: 1px solid rgba(56, 34, 20, 0.85);
+  background: rgba(231, 211, 170, 0.9);
+  color: #24180f;
+  font-size: 10px;
+  line-height: 1.1;
+  font-family: Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+/* v1.3.9 fondo continuo al hacer scroll en fichas largas */
+.mausritter.sheet.wdip-sheet .window-content {
+  background:
+    linear-gradient(180deg, rgba(242, 226, 188, 0.985), rgba(214, 190, 137, 0.975)),
+    radial-gradient(circle at 8% 10%, rgba(111, 64, 24, 0.19), transparent 20%),
+    radial-gradient(circle at 91% 12%, rgba(126, 75, 32, 0.16), transparent 18%),
+    radial-gradient(circle at 18% 86%, rgba(93, 56, 22, 0.12), transparent 18%),
+    radial-gradient(circle at 84% 84%, rgba(96, 56, 20, 0.16), transparent 16%) !important;
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form {
+  min-height: max-content !important;
+  height: auto !important;
+  background: transparent !important;
+}
+
+.mausritter.sheet.wdip-sheet .window-content > form::before,
+.mausritter.sheet.wdip-sheet .window-content > form::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* v1.5.0 visor de descripciones: hover de 2 s o clic derecho */
+.mausritter.sheet.wdip-sheet .item-card[data-item-id],
+.mausritter.sheet.wdip-sheet [data-wdip-help] {
+  cursor: help;
+}
+
+.mausritter.sheet.wdip-sheet .item-card[data-item-id] {
+  transition: filter 120ms ease, box-shadow 120ms ease;
+}
+
+.mausritter.sheet.wdip-sheet .item-card[data-item-id]:hover {
+  filter: brightness(1.035);
+}
+
+.wdip-sheet-help {
+  position: fixed;
+  z-index: 100000;
+  max-height: min(520px, calc(100vh - 20px));
+  overflow: auto;
+  padding: 0;
+  color: #26180f;
+  border: 2px solid #3b2515;
+  border-radius: 3px;
+  background:
+    linear-gradient(165deg, rgba(248, 236, 202, 0.995), rgba(216, 188, 132, 0.995)),
+    radial-gradient(circle at 12% 18%, rgba(114, 63, 23, 0.13), transparent 30%);
+  box-shadow:
+    0 12px 35px rgba(15, 9, 5, 0.48),
+    inset 0 0 0 4px rgba(255, 246, 216, 0.30),
+    inset 0 0 40px rgba(83, 46, 17, 0.12);
+  font-family: Georgia, "Times New Roman", serif;
+  pointer-events: none;
+  animation: wdip-help-arrive 130ms ease-out;
+}
+
+.wdip-sheet-help[hidden] {
+  display: none !important;
+}
+
+.wdip-sheet-help.is-pinned {
+  border-color: #7f3f34;
+  pointer-events: auto;
+}
+
+.wdip-help-heading {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  min-height: 46px;
+  padding: 8px 10px;
+  color: #f2dfb4;
+  background: linear-gradient(90deg, #342014, #5b2d24 78%, #733a32);
+  border-bottom: 1px solid rgba(32, 18, 10, 0.75);
+}
+
+.wdip-help-image {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(244, 222, 175, 0.72);
+  border-radius: 2px;
+  background: #d8bd84;
+}
+
+.wdip-help-title {
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #120b07;
+}
+
+.wdip-help-pin {
+  min-width: 18px;
+  margin-left: 8px;
+  color: #e3ba6b;
+  text-align: center;
+}
+
+.wdip-help-description {
+  padding: 12px 14px 8px;
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.wdip-help-description > :first-child {
+  margin-top: 0;
+}
+
+.wdip-help-description > :last-child {
+  margin-bottom: 0;
+}
+
+.wdip-help-description a {
+  color: #74372e;
+  font-weight: 700;
+}
+
+.wdip-help-description img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wdip-help-hint {
+  margin: 4px 12px 0;
+  padding: 7px 2px 8px;
+  border-top: 1px solid rgba(59, 37, 21, 0.28);
+  color: rgba(55, 34, 20, 0.72);
+  font: 700 10px/1.2 Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+@keyframes wdip-help-arrive {
+  from { opacity: 0; transform: translateY(4px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wdip-sheet-help,
+  .mausritter.sheet.wdip-sheet .item-card[data-item-id] {
+    animation: none;
+    transition: none;
+  }
+}

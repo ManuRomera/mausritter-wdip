@@ -1,0 +1,65 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header-maus wdip-weapon-header">
+    <img class="item-img" src="{{img}}" data-edit="img" title="{{name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="{{localize "Maus.Item"}}" class="item-text item-sheet-header"/></h1>
+
+      <div class="grid grid-3col">
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemWorth"}}</label>
+          <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "WDIP.WeaponShotsCurrent"}}</label>
+          <input type="text" name="system.pips.value" value="{{system.pips.value}}" data-dtype="Number" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "WDIP.WeaponShotsMax"}}</label>
+          <input type="text" name="system.pips.max" value="{{system.pips.max}}" data-dtype="Number" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemTag"}}</label>
+          <input type="text" name="system.tag" value="{{system.tag}}" data-dtype="String" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemDamage"}} 1</label>
+          <input type="text" name="system.weapon.dmg1" value="{{system.weapon.dmg1}}" data-dtype="String" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemDamage"}} 2</label>
+          <input type="text" name="system.weapon.dmg2" value="{{system.weapon.dmg2}}" data-dtype="String" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemWidth"}}</label>
+          <input type="text" name="system.size.width" value="{{system.size.width}}" data-dtype="Number" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemHeight"}}</label>
+          <input type="text" name="system.size.height" value="{{system.size.height}}" data-dtype="Number" class="item-text"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "Maus.ItemColor"}}</label>
+          <input type="text" name="system.color" value="{{system.color}}" data-dtype="String" class="item-text"/>
+        </div>
+      </div>
+
+      <div class="wdip-weapon-flags">
+        <label class="resource-label checkbox-label">
+          <input type="checkbox" name="flags.mausritter_wdip.isFirearm" {{checked wdip.isFirearm}} data-dtype="Boolean" />
+          {{localize "WDIP.WeaponFirearm"}}
+        </label>
+        <div class="notes">{{localize "WDIP.WeaponHint"}}</div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs item" data-group="primary">
+    <a class="item" data-tab="description">{{localize "Maus.ItemDescription"}}</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" button=true owner=owner editable=true}}
+    </div>
+  </section>
+</form>
