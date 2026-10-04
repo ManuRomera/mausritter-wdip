@@ -1,5 +1,11 @@
 # Mausritter: We Deal in Pips
 
+<p align="center">
+  <a href="https://github.com/ManuRomera/mausritter-wdip/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ManuRomera/mausritter-wdip?include_prereleases&style=for-the-badge&color=9b6a3c&label=release"></a>
+  <a href="https://foundryvtt.com"><img alt="Foundry VTT V12" src="https://img.shields.io/badge/Foundry%20VTT-V12-57d8c8?style=for-the-badge"></a>
+  <img alt="System" src="https://img.shields.io/badge/system-mausritter-2b3245?style=for-the-badge">
+</p>
+
 ![Portada de Mausritter: We Deal in Pips](assets/wdip-cover.webp)
 
 Una frontera de ratones, pólvora y pips para **Foundry Virtual Tabletop**. Este módulo transforma la presentación de las fichas de Mausritter con una estética de cartel de recompensa y añade herramientas para partidas western: armas de fuego, consumo automático de munición y ayuda contextual dentro de la propia ficha.
