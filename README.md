@@ -52,3 +52,15 @@ Después activa **Mausritter: We Deal in Pips** en la configuración de módulos
 Módulo de Foundry VTT creado por **Manu Romera**. Requiere el sistema Mausritter y está pensado como complemento no oficial para jugar con una ambientación western inspirada en *We Deal in Pips / We Deal in Lead*. No incluye el contenido del suplemento original.
 
 La ilustración de portada es original y forma parte de este proyecto.
+
+---
+
+<p align="center">
+  <a href="https://github.com/ManuRomera">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManuRomera/ManuRomera/main/brand/MR_09_Monograma_Marfil_Transparente.png">
+      <img src="https://raw.githubusercontent.com/ManuRomera/ManuRomera/main/brand/MR_10_Monograma_Negro_Transparente.png" alt="MR · Manu Romera" height="56">
+    </picture>
+  </a><br>
+  <sub>Hecho por <a href="https://github.com/ManuRomera"><b>Manu Romera</b></a> · Digital RPG Design</sub>
+</p>
